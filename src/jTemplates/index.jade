@@ -1,0 +1,125 @@
+//-Layout Base
+extends partials/base.jade
+
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Maggi" )
+
+
+
+block content
+
+	section.container-fluid.cont_general
+		
+		div.row.conte_texto
+			div.col-lg-12.col-md-12.col-sm-12-colxs-12.texto_principal
+
+				img.img-responsive.texto-intro(src="images/text_intro.svg" alt="Texto_Intro", tittle="Intro Formulario")
+				
+
+
+		div.row
+			div.col-lg-10.col-md-10.col-sm-12-colxs-12.col-lg-push-1.col-md-push-1.cont_contador
+				p.titulo_contador.
+					Ya somos
+
+				div.contador
+					div.cont_numero.
+						9
+
+					div.cont_numero.
+						9
+
+					div.cont_numero.
+						9
+
+					div.cont_numero.
+						9
+
+				p.titulo_contador.
+					¿Faltas t&uacute;?
+
+				p.text-incr.
+					INSCR&Iacute;BETE
+
+
+		form#registro
+			div.row.cont_registroM
+				div.col-lg-4.col-md-4.col-sm-12-colxs-12.col-lg-push-2.col-md-push-2
+						//Nombre
+						div.form-group
+							label(for="nombre") Nombres y Apellidos *
+							input.form-control(type="text")
+						///-Nombre
+
+						//Genero
+						div.form-group
+							label(for="genero") G&eacute;nero *
+							input.form-control(type="text")
+						///-Genero
+
+						//Fecha de Nacimiento
+						div.form-group
+							label(for="fecha") Fecha de Nacimiento *
+							input.form-control(type="text")
+						///-Fecha de Nacimiento
+
+						//Documento
+						div.form-group
+							label(for="documento") Documento *
+							input.form-control(type="text")
+						///-Documento
+		
+
+
+				div.col-lg-4.col-md-4.col-sm-12-colxs-12.col-lg-push-2.col-md-push-2
+					
+						//Nombre
+						div.form-group
+							label(for="correo") Correo
+							input.form-control(type="text")
+						///-Nombre
+
+						//Dirección
+						div.form-group
+							label(for="dirección") Direcci&oacute;n
+							input.form-control(type="text")
+						///-Dirección
+
+						//Fecha de Telefono
+						div.form-group
+							label(for="telefono") Tel&eacute;fono
+							input.form-control(type="text")
+						///-Fecha de Telefono
+
+			div.row
+				div.col-lg-4.col-md-4.col-sm-12-colxs-12.col-lg-push-3.col-md-push-2
+
+					div.checkbox
+						input( type="checkbox", name="contacto", value="contacto")
+						label.text_terminos(for="contacto").
+							Acepto 
+						a.
+							T&eacute;rminos y Condiciones
+
+
+
+				div.col-lg-4.col-md-4.col-sm-12-colxs-12.col-lg-push-3.col-md-push-2
+
+					
+					div.checkbox
+						input( type="checkbox", name="contacto", value="contacto")
+						label.text_terminos(for="contacto").
+							Autorizo a NESTL&Eacute;&reg; para el tratamiento de mis datos personales
+
+					
+						
+			div.row
+				div.col-lg-10.col-md-10.col-sm-12-colxs-12.col-lg-push-1.col-md-push-1
+
+					a.btn-registro.
+
+						REGISTRARME
+
+

@@ -3,7 +3,16 @@
 footer.container-fluid
 	div.row
 		div.col-lg-12
-			h5.block-center.text-center Footer Content
+			h5.block-center.text-center 
+
+				a(href="#").
+					2016 MAGGI® Derechos Reservados | 
+				a(href="#").
+					Política de Privacidad | 
+				a(href="#").
+					Aviso de Privacidad |
+				a(href="#").
+					Política de Datos Personales
 
 
 ///-Footer
@@ -13,9 +22,8 @@ footer.container-fluid
 if debug == true
 	script(src='js/libs/jquery.js')
 	script(src='js/libs/bootstrap.min.js')
-	script(src='js/frontend-brm.js')
+	script(src='js/formulario-maggi.js')
 
 else
-	script(src="js/libs.frontend-brm.min.js")
-	script(src='js/frontend-brm.js')
-	script(src='js/validarForm.js')
+	script(src="js/libs.formulario-maggi.min.js")
+	script(src='js/formulario-maggi.js')

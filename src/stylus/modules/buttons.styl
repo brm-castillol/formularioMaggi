@@ -1,18 +1,41 @@
-.btn-cargar-mas
-	background-color Azul !important
-	color #fff !important
-	font-size 1.5em
+.cont_headerM
+	background $Amarillo
+
+.btn-registro
+	background linear-gradient(to bottom, #0997d5 0%, #1d71b7 100%)
+	border-radius 24px
+	box-shadow 2px 2px $AzulS
+	centrar(0.5rem, 15rem)
+	color #fff
 	display block
-	vertical-align middle
-	margin 1em auto
-	
-	&:hover
-		background-color darken(Azul, 40%) !important
-
-.btn-primary
-	background-color Azul
-	
+	font-family $QuickL
+	padding 1rem 3rem
+	transitionBase(0.4s)
 
 	&:hover
-		background-color darken(Azul, 40%)
+		background linear-gradient(to bottom, #1d71b7 0%, #0997d5 100%)
+		color #fff
+		cursor pointer
+		text-decoration none
+	
+.btn-ir-formulario
+	background linear-gradient(to bottom, #0997d5 0%, #1d71b7 100%)
+	border-radius 24px
+	box-shadow 2px 2px $AzulS
+	color #fff
+	display block
+	font-family $QuickL
+	padding 1rem 3rem
+	width 18rem
+	margin -22px 0 0 40%
+	text-transform uppercase
+	transitionBase(0.4s)
+	z-index 1000
+	position absolute
+
+	&:hover
+		background linear-gradient(to bottom, #1d71b7 0%, #0997d5 100%)
+		color #fff
+		cursor pointer
+		text-decoration none
 		
