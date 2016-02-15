@@ -1,3 +1,6 @@
+var screenWidth = $(window).width(),
+	imgHeader = $('.contHeader_img img');
+
 $(document).ready(function () {
 	
 	var input = $('#registro .form-group input');
@@ -23,13 +26,6 @@ $(document).ready(function () {
 
 	});
 
-
-
-});
-
-//btn-ir
-
-$(document).ready(function(){
 	var cont_contador = $( ".cont_contador" );
 	var position = cont_contador.position();
 	$('.ir-abajo').click(function(){
@@ -37,5 +33,34 @@ $(document).ready(function(){
 			scrollTop: position.top+'px'
 		}, 300);
 	});
-  
+
+
+	if (screenWidth <= 1680 ) {	
+
+		imgHeader.attr('src','images/curvaHeader.png');
+
+	};
+
+	if (screenWidth <= 1200 ) {	
+
+		imgHeader.attr('src','images/curvaHeader-2.png');
+
+	};
+
+	if (screenWidth <= 760 ) {	
+
+		imgHeader.attr('src','images/curvaHeader-3.png');
+
+	};
+
+	if (screenWidth <= 400 ) {	
+
+		imgHeader.attr('src','images/curvaHeader-4.png');
+
+	};
+
+
+
+
 });
+

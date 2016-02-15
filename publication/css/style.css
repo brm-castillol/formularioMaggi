@@ -1,6 +1,13 @@
-/*! Formulario Maggi - v0.1.0 - 2016-02-04
+/*! Formulario Maggi - v0.1.0 - 2016-02-15
 * https://github.com/cortesc/HTML
 * Copyright (c) 2016 Lady Castillo; Licensed MIT */
+.col-lg-12,
+.col-md-12,
+.col-sm-12,
+.col-xs-12 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 a {
   text-decoration: none;
 }
@@ -89,7 +96,7 @@ h3 .texto_principal img.texto-intro,
 }
 .cont_nuevoM {
   margin: 0 auto;
-  width: 20rem;
+  width: 30rem;
   left: 0;
   position: absolute;
   z-index: 1;
@@ -146,13 +153,25 @@ h3 .texto_principal img.texto-intro,
   margin: 4rem auto -3rem;
   max-width: 100%;
   width: 40rem;
+  z-index: 10;
+}
+.pruebas2 {
+  position: relative;
+}
+.contHeader_img {
+  height: 55rem;
+  overflow: hidden;
+}
+.contHeader_img .prueba {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
 }
 .contHeader_img img {
   margin: 0 auto;
   width: 80rem;
-  display: block;
   height: auto;
-  max-width: 100%;
+  width: 100%;
 }
 .cont_headerM {
   background: #fff100;
@@ -355,9 +374,25 @@ footer h5 a:hover {
   background: transparent !important;
   border-color: #868686;
 }
+@media (max-width: 1680px) {
+  .contHeader_img {
+    height: 55rem;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1280px) {
+  .contHeader_img {
+    height: 57rem;
+    overflow: hidden;
+  }
+}
 @media (max-width: 994px) {
-  .conte_redes {
+  .conte_redess {
     margin-left: 73%;
+  }
+  .contHeader_img {
+    height: 39rem;
+    overflow: hidden;
   }
 }
 @media (min-width: 940px) and (max-width: 992px) {
@@ -377,6 +412,9 @@ footer h5 a:hover {
   .btn-ir-formulario {
     margin: -22px 0 0 38%;
   }
+  .cont_nuevoM {
+    width: 20rem;
+  }
 }
 @media (min-width: 600px) and (max-width: 669px) {
   .conte_redes {
@@ -384,11 +422,18 @@ footer h5 a:hover {
     top: -2.5rem;
   }
   .cont_tit_sarten {
-    margin: 4rem 0 -3rem 5rem;
+    margin: 4rem 0 -3rem 8rem;
     width: 35rem;
   }
   .btn-ir-formulario {
     margin: -22px 0 0 35%;
+  }
+  .cont_nuevoM {
+    width: 20rem;
+  }
+  .contHeader_img {
+    height: 47rem;
+    overflow: hidden;
   }
 }
 @media (min-width: 500px) and (max-width: 599px) {
@@ -400,16 +445,25 @@ footer h5 a:hover {
     top: -2.5rem;
   }
   .cont_tit_sarten {
-    margin: 4rem 0 -3rem 0;
+    margin: 4rem 0 -3rem 2rem;
     width: 30rem;
   }
   .btn-ir-formulario {
     margin: -22px 0 0 32%;
   }
+  .contHeader_img {
+    height: 41rem;
+    overflow: hidden;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .contHeader_img {
+    height: 27rem;
+  }
 }
 @media (min-width: 381px) and (max-width: 499px) {
   .cont_nuevoM {
-    width: 12rem;
+    width: 14rem;
   }
   .conte_redes {
     margin-left: 77%;
@@ -441,16 +495,20 @@ footer h5 a:hover {
     background-position: -3px -34px;
   }
   .cont_tit_sarten {
-    margin: 4rem 0 -2rem 0;
+    margin: 4rem 0 -2rem 3rem;
     width: 30rem;
   }
   .btn-ir-formulario {
-    margin: -22px 0 0 32%;
+    margin: -22px 0 0 23%;
+  }
+  .contHeader_img {
+    height: 41rem;
+    overflow: hidden;
   }
 }
 @media (min-width: 300px) and (max-width: 381px) {
   .cont_nuevoM {
-    width: 12rem;
+    width: 14rem;
   }
   .conte_redes {
     margin-left: 70%;
@@ -482,7 +540,7 @@ footer h5 a:hover {
     background-position: -3px -34px;
   }
   .cont_tit_sarten {
-    margin: 4rem 0 -2rem 0;
+    margin: 4rem 0 -2rem 3rem;
     width: 30rem;
   }
   .btn-ir-formulario {
